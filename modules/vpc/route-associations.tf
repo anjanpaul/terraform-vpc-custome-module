@@ -9,3 +9,4 @@ resource "aws_route_table_association" "private" {
   route_table_id = aws_route_table.private[each.key].id
   subnet_id      = aws_subnet.private[each.key].id
 }
+
